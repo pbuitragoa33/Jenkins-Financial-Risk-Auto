@@ -1,0 +1,20 @@
+# Configuracion de gitignore para el proyecto Jenkins_Financial_Risk_Auto
+
+# Ignorar archivos de entorno y credenciales
+.env
+*.env
+*.env.*
+
+# Ignorar archivos de logs
+logs/
+*.log
+
+# Ignorar archivos de modelos entrenados
+models/
+*.pkl
+
+# Ignorar archivos de cache y checkpoints
+__pycache__/
+*.pyc
+*.pyo
+checkpoints/
