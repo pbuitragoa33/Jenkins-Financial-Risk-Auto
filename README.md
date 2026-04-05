@@ -1,6 +1,6 @@
 # Jenkins Financial Risk Auto
 
-Proyecto de Ciencia de Datos en Produccion para evaluar riesgo crediticio con:
+Proyecto de Ciencia de Datos en Produccion para evaluar riesgo crediticio usando:
 
 - Pipeline de entrenamiento y evaluacion de modelos.
 - API en FastAPI para inferencia.
