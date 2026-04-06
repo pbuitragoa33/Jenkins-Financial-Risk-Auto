@@ -28,6 +28,10 @@ Jenkins_Financial_Risk_Auto/
 |- Jenkinsfile
 |- requirements.txt
 |- README.md
+|- pyops/
+|	|- chequeo_archivos.py
+|	|- scanner_secretos.py
+|	|- validador_proyecto.py
 |- pipeline_MLOps/
 |  |- docker-compose.yml
 |  |- Dockerfile
@@ -41,15 +45,10 @@ Jenkins_Financial_Risk_Auto/
 |  |  |- multimodel_deploy.py
 |  |  |- model_interface.py
 |  |  |- multimodel_interface.py
-|  |  |- data/
 |  |- outputs/
 |     |- artefactos/
 |     |- modelo_heuristico/
 |     |- reporte_training_evaluation/
-|- pyops/
-	|- chequeo_archivos.py
-	|- scanner_secretos.py
-	|- validador_proyecto.py
 ```
 
 ## 3. Que hace cada parte
