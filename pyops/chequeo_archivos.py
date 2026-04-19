@@ -26,11 +26,13 @@ def check_dockerfile_basico(dockerfile: Path):
     nombre = f"dockerfile::basic::{dockerfile.as_posix()}"
 
     if not dockerfile.exists():
+
         return [resultado(nombre, False, f"Dockerfile no encontrado en {dockerfile.as_posix()}")]
 
     texto = dockerfile.read_text(encoding="utf-8", errors="ignore")
 
     msgs = []
+
     ok = True
 
     if "FROM" not in texto:
@@ -44,6 +46,7 @@ def check_dockerfile_basico(dockerfile: Path):
         msgs.append("Evita usar :latest en la imagen")
 
     if "pip install -r requirements.txt" not in texto and "poetry install" not in texto:
+        
         msgs.append("No se encontro comando de instalacion de dependencias comun")
 
     return [resultado(nombre, ok, "; ".join(msgs) if msgs else "Chequeo Dockerfile basico OK")]
